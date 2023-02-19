@@ -1,5 +1,11 @@
 __pycache__
 MII_LIEPA_REC_V1
 MII_LIEPA_SYN_V1
+clips
+clips-mp3
+audio
+audio-mp3
 
 *.tar.bz2
+node_modules
+dataset

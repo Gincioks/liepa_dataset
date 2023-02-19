@@ -5,7 +5,7 @@ from utils.untar import extract_all
 from argparse import ArgumentParser
 from os import rename
 
-from liepa import default_rec_dir, default_syn_dir, default_ann_dir
+from other.liepa import default_rec_dir, default_syn_dir, default_ann_dir
 
 # For manual download us link: https://drive.google.com/open?id=[ID]
 #liepa_voice_recognition_dataset_file_id = '1GSzu9n7I-mUMfaD7jkq_CvwZlZXbz9c7'

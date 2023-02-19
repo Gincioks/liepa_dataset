@@ -9,9 +9,9 @@ import codecs
 import chardet
 import operator
 
-from liepa import default_rec_dir, default_wav_samplerate, default_wav_subtype, rec_filname_pattern
-from liepa import valid_lt_symbols, valid_lt2ascii_symbols, valid_ascii_symbols, valid_symbols, valid_mapped_symbols
-from liepa import txt_extensions, wav_extensions
+from other.liepa import default_rec_dir, default_wav_samplerate, default_wav_subtype, rec_filname_pattern
+from other.liepa import valid_lt_symbols, valid_lt2ascii_symbols, valid_ascii_symbols, valid_symbols, valid_mapped_symbols
+from other.liepa import txt_extensions, wav_extensions
 from utils.audio import resample, wav_duration
 from utils.text import mistypes, regex_replacements, silence_indicators, noise_indicators
 

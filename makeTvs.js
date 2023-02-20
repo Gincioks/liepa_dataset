@@ -3,8 +3,8 @@ const path = require("path");
 
 const dirPath = "./MII_LIEPA_REC_V1";
 const folderPrefix = "S";
-const outputFileName = "train.tsv";
-const audioFolder = "clips";
+const outputFileName = "liepa_dataset/train.tsv";
+const audioFolder = "liepa_dataset/clips";
 
 // Default values
 const up_votes = 0;
@@ -14,7 +14,7 @@ const locale = "lt";
 const segment = "";
 
 const writeStream = fs.createWriteStream(outputFileName);
-writeStream.write("client_id\tpath\taudio\tsentence\tup_votes\tdown_votes\tage\tgender\taccents\tlocale\tsegment\n");
+writeStream.write("client_id\tpath\taudio\tsentence\tup_votes\tdown_votes\tage\tgender\taccent\tlocale\tsegment\n");
 
 const prepareInfoFromFile = (filePath) => {
   const pathWithoutExt = filePath.split(".")[0];

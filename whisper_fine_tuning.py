@@ -110,7 +110,9 @@ print('We are logged in to Hugging Face now!')
 # STEP 1. Download Dataset
 common_voice = DatasetDict()
 
-common_voice["train"] = load_dataset(data_set_name, language_code, split="train+validation", use_auth_token=True)
+# common_voice["train"] = load_dataset(data_set_name, language_code, split="train+validation", use_auth_token=True)
+# liepa_sentences = load_dataset("gincioks/liepa_sentences", split="train", use_auth_token=True)
+common_voice["train"] = load_dataset("gincioks/liepa_sentences", split="train", use_auth_token=True)
 common_voice["test"] = load_dataset(data_set_name, language_code, split="test", use_auth_token=True)
 
 common_voice = common_voice.remove_columns(

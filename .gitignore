@@ -9,3 +9,4 @@ audio-mp3
 *.tar.bz2
 node_modules
 dataset
+liepa_dataset

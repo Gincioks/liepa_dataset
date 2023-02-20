@@ -8,6 +8,9 @@ import torch
 # import the relavant libraries for loggin in
 from huggingface_hub import HfApi, HfFolder
 
+# !add-apt-repository -y ppa:savoury1/ffmpeg4
+# !apt-get -qq install -y ffmpeg
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Variables
 token = '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'
@@ -151,8 +154,7 @@ print(f'{common_voice["train"][0]}\n')
 # Prepare and use function to prepare our data ready for the Whisper AI model
 common_voice = common_voice.map(
     prepare_dataset,
-    remove_columns=common_voice.column_names["train"],
-    num_proc=2 # num_proc > 1 will enable multiprocessing
+    remove_columns=common_voice.column_names["train"]
     )
 
 # - - - - - - - - - - - - - - - - - - - - - |

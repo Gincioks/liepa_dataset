@@ -1,5 +1,8 @@
 datasets
 librosa
-evaluate
+evaluate>=0.4.0
 jiwer
 gradio
+torch
+torchaudio
+transformers
